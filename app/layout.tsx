@@ -28,10 +28,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`flex font-['Open_Sans'] text-twnAlternateTextColor ${twnFont.variable} ${twnFontBold.variable}`}>
         <Navbar />
-        <main className="relative overflow-hidden w-full h-screen px-10 py-20 bg-fixed bg-twnBackgroundColor">
-          {children}
-          <Image className="absolute top-0 right-0" src="/bg-deco-right.svg" alt={"bg-right"} width={300} height={300} />
-          <Image className="absolute bottom-0 left-0" src="/bg-deco-left.svg" alt={"bg-right"} width={150} height={150} />
+        <main className="relative px-auto w-screen h-screenbg-fixed bg-twnBackgroundColor">
+          <Image className="absolute top-0 right-0 z-0" src="/bg-deco-right.svg" alt={"bg-right"} width={260} height={260} />
+          <Image className="absolute bottom-0 left-0 z-0" src="/bg-deco-left.svg" alt={"bg-right"} width={150} height={150} />
+          {/* <div className=' bg-red-300'> */}
+          <div className='w-full h-screen  relative z-10 overflow-auto px-10 py-20'>
+            {children}
+          </div>
+          {/* </div> */}
         </main>
       </body>
     </html>

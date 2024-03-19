@@ -25,15 +25,16 @@ h2 {
   font-size: 32px;
   font-family: var(--twn-font-bold);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-button {
+.button {
   font-family: var(--twn-font-bold);
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 16px;
-  padding-top: 13.6px;
-  padding-bottom: 13.6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 40px;
   padding-right: 40px;
   background: #14cc76;
