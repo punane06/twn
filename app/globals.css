@@ -44,7 +44,8 @@ h2 {
   border-bottom-width: 4px;
   text-transform: uppercase;
 }
-button:hover {
+
+.button:hover {
   background: #41e592;
 }
 
